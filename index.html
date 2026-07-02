@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Responsive Image Gallery</h1>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('city')">City</button>
+        <button onclick="filterImages('animals')">Animals</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+
+        <div class="image nature">
+            <img src="https://picsum.photos/id/10/500/400" alt="">
+        </div>
+
+        <div class="image city">
+            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=500" alt="New York City">
+        </div>
+
+        <div class="image animals">
+            <img src="https://picsum.photos/id/237/500/400" alt="">
+        </div>
+
+        <div class="image nature">
+            <img src="https://picsum.photos/id/1043/500/400" alt="">
+        </div>
+
+        <div class="image city">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500" alt="Dubai City">
+        </div>
+
+        <div class="image animals">
+            <img src="https://picsum.photos/id/1062/500/400" alt="">
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="close">&times;</span>
+
+        <button class="prev">&#10094;</button>
+
+        <img class="lightbox-img">
+
+        <button class="next">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
